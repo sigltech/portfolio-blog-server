@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-cors = "*"
+gunicorn = "*"
+flask-sqlalchemy = "*"
+python-dotenv = "*"
+pyjwt = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+init_db = "python init_db.py"
+dev = "flask run -p ${PORT}"
+start = "gunicorn server_app:app --bind 0.0.0.0:${PORT}"
+test="pytest ."
+test_coverage="pytest --cov-report term-missing --cov=."
