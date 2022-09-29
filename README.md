@@ -1,6 +1,6 @@
 # Blog Server
 
-This is a simple blog server that uses a JSON file to store blog posts. It is intended to be used with the [blog client](https://github.com/sigltech/My_Portfolio.git).
+This is a simple blog server that uses a SQLlite database to store blog posts. It is intended to be used with the [blog client](https://github.com/sigltech/My_Portfolio.git).
 
 ## Usage
 
